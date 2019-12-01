@@ -8,17 +8,16 @@
 	width: 100%;
 	text-align: center;
 }
-
 .menu-container {
 	content: " ";
 	top: 0;
 	left: 0;
+	font-size: 25px;
 	position: absolute; /* to the top edge of the screen */
 	width: 100%;
-	background-color: rgba(61,61,61,0.7); /* making background color transpearant */
+	/* background-color: rgba(61,61,61,0.7); /* making background color transpearant */
 	z-index:99; /* make the menu stay above all other elements */
 }
-
 .menu {
 	/* font: bold 12px/18px sans-serif; */
 	text-shadow: 2px 0 15px #fff, 2px 1px 3px #000;
@@ -29,7 +28,6 @@
 	padding: 0;
 	list-style: none;
 }
-
 .menu li:hover {
 	background-color: #fff;
 	color: #fff;
@@ -43,13 +41,12 @@
 	opacity: 1;
 	visibility: visible; /* While hovered, drop down-menu appears */
 }
-
 .submenu {
 	padding: 0;
 	left: 0;
 	position: absolute;
-	top: 48px;
-	width: 175.5px;
+	top: 64px;
+	width: 100%; /* determines the menu + dropdown width */
 	opacity: 0;
 	visibility: hidden; /* While not being hovered, drop down-menu hides */
 	transition: opacity 0.2s ease;
@@ -57,8 +54,7 @@
 .submenu li { 
 	font-size: .75em;
 	background-color: rgba(61,61,61,0.7); /* making background color transpearant */
-	
-	display: block; 
+	display: block;
 	color: #fff;
 }
 .submenu li:hover {
